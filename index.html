@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Calculate your exact age in years, months and days. Find your total days lived and countdown to your next birthday with Age Calculator by Kali Yuga.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://YOUR-DOMAIN.vercel.app/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Age Calculator by Kali Yuga | Exact Age in Years, Months & Days</title>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Age Calculator by Kali Yuga home">
+      <span class="brand-mark">K</span><span>Age Calculator <small>by Kali Yuga</small></span>
+    </a>
+    <span class="header-note">Free · Fast · Private</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">YOUR AGE, MADE SIMPLE</p>
+      <h1>Age Calculator</h1>
+      <p class="intro">Find your exact age in years, months and days — in just a moment.</p>
+    </section>
+
+    <section class="calculator card" aria-labelledby="calculator-title">
+      <h2 id="calculator-title">Enter your date of birth</h2>
+      <form id="age-form">
+        <label for="birth-date">Date of birth</label>
+        <input id="birth-date" name="birth-date" type="date" required>
+        <p class="error" id="error-message" role="alert" aria-live="polite"></p>
+        <button type="submit" class="primary-button">Calculate my age <span aria-hidden="true">→</span></button>
+      </form>
+
+      <div id="results" class="results" hidden aria-live="polite">
+        <div class="result-heading">
+          <div><p class="eyebrow">YOUR EXACT AGE</p><h2>Here are your results</h2></div>
+          <button type="button" id="reset-button" class="text-button">Reset</button>
+        </div>
+        <div class="age-grid">
+          <div class="age-tile"><strong id="years">0</strong><span>Years</span></div>
+          <div class="age-tile"><strong id="months">0</strong><span>Months</span></div>
+          <div class="age-tile"><strong id="days">0</strong><span>Days</span></div>
+        </div>
+        <div class="details-grid">
+          <div class="detail"><span>Total days lived</span><strong id="total-days">—</strong></div>
+          <div class="detail"><span>Total weeks lived</span><strong id="total-weeks">—</strong></div>
+          <div class="detail"><span>Day you were born</span><strong id="birth-weekday">—</strong></div>
+          <div class="detail"><span>Next birthday</span><strong id="next-birthday">—</strong></div>
+          <div class="detail detail-wide"><span>Time until your next birthday</span><strong id="countdown">—</strong></div>
+        </div>
+        <p class="privacy-note">Your date of birth is calculated in this browser and is not sent to a server.</p>
+      </div>
+    </section>
+
+    <section class="info-section">
+      <h2>How does the age calculator work?</h2>
+      <p>Enter your date of birth and select “Calculate my age”. The calculator compares it with today's date and displays your age in completed years, months and days. It also shows your total days lived and the time remaining until your next birthday.</p>
+      <h2>Why use Age Calculator by Kali Yuga?</h2>
+      <ul>
+        <li>Quick and easy to use on phones, tablets and computers.</li>
+        <li>Shows your age in years, months and days.</li>
+        <li>Includes total days, weeks and your next birthday countdown.</li>
+        <li>Free to use, with no account or sign-up required.</li>
+        <li>Your date of birth stays in your browser.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year-now"></span> Age Calculator by Kali Yuga. All rights reserved.</p>
+    <p>Simple tools. Clear answers.</p>
+  </footer>
+  <script src="/script.js" defer></script>
+</body>
+</html>
